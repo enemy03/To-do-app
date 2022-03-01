@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fffba8;
+    height: 100vh;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90vh;
+    background-color: #befff7;
+    -webkit-box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 1);
+    border-radius: 50px;
+}
+
+.container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11vw;
+    margin-top: 60px;
+    font-family: 'Marko One', serif;
+    text-shadow: 1px 1px 2px black
+}
+
+.container label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+
+.container label input#create {
+    padding: 15px;
+    width: 80%;
+    display: block;
+    outline: none;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+
+.container .wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container label input#submit {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: #ff72ac;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container label button {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    background-color: #fffba8;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: rgb(89, 95, 190);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (min-width:576px) {
+    .container label input#create {
+        padding: 20px;
+        width: 80%;
+    }
+
+    .container label input#submit {
+        padding: 15px;
+        font-size: 1.7rem;
+    }
+
+    .container label button {
+        padding: 15px;
+        font-size: 1.7rem;
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width:768px) {
+
+    .container h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 9vw;
+    }
+
+    .container label input#create {
+        padding: 20px;
+        width: 70%;
+        font-size: 2rem;
+    }
+
+    .container label input#submit {
+        width: 40%;
+        padding: 20px 0;
+        font-size: 1.7rem;
+    }
+
+    .container label button {
+        width: 45%;
+        padding: 20px 0;
+        font-size: 1.7rem;
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 70%;
+        height: 90vh;
+    }
+
+    .container h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 8vw;
+    }
+
+    .container label input#create {
+        padding: 25px;
+        width: 60%;
+    }
+
+    .container .wrap {
+        flex-direction: row;
+    }
+
+    .container label input#submit {
+        width: 30%;
+        padding: 20px 0;
+        font-size: 1.7rem;
+    }
+
+    .container label button {
+        width: 35%;
+        padding: 20px 0;
+        font-size: 1.7rem;
+        margin-left: 15px;
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width:1400px) {
+
+    .container {
+        width: 50%;
+        height: 90vh;
+    }
+
+    .container h2 {
+        font-size: 5vw;
+    }
+
+    .container label input#create {
+        width: 70%;
+        font-size: 2.5rem;
+    }
+
+    .container .wrap {
+        margin-top: 15px;
+    }
+
+
+}
