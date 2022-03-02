@@ -9,7 +9,8 @@ const removeTask = (e) => {
     tar.remove()
 }
 
-const addTask = () => {
+const addTask = (e) => {
+    e.preventDefault()
     if (input.value) {
         const li = document.createElement('li');
         ul.appendChild(li);
@@ -22,7 +23,8 @@ const addTask = () => {
     })
 
     document.querySelectorAll('li').forEach(it => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault()
             it.remove()
         })
 

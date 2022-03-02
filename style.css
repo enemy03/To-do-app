@@ -38,7 +38,7 @@ body {
     text-shadow: 1px 1px 2px black
 }
 
-.container label {
+.container form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ body {
 }
 
 
-.container label input#create {
+.container form input#create {
     padding: 15px;
     width: 80%;
     display: block;
@@ -68,7 +68,7 @@ body {
     align-items: center;
 }
 
-.container label input#submit {
+.container form input#submit {
     display: block;
     width: 50%;
     padding: 10px;
@@ -83,7 +83,7 @@ body {
     cursor: pointer;
 }
 
-.container label button {
+.container form button {
     display: block;
     width: 60%;
     padding: 10px;
@@ -117,17 +117,17 @@ body {
 }
 
 @media (min-width:576px) {
-    .container label input#create {
+    .container form input#create {
         padding: 20px;
         width: 80%;
     }
 
-    .container label input#submit {
+    .container form input#submit {
         padding: 15px;
         font-size: 1.7rem;
     }
 
-    .container label button {
+    .container form button {
         padding: 15px;
         font-size: 1.7rem;
         margin-top: 15px;
@@ -143,19 +143,19 @@ body {
         font-size: 9vw;
     }
 
-    .container label input#create {
+    .container form input#create {
         padding: 20px;
         width: 70%;
         font-size: 2rem;
     }
 
-    .container label input#submit {
+    .container form input#submit {
         width: 40%;
         padding: 20px 0;
         font-size: 1.7rem;
     }
 
-    .container label button {
+    .container form button {
         width: 45%;
         padding: 20px 0;
         font-size: 1.7rem;
@@ -180,7 +180,7 @@ body {
         font-size: 8vw;
     }
 
-    .container label input#create {
+    .container form input#create {
         padding: 25px;
         width: 60%;
     }
@@ -189,13 +189,13 @@ body {
         flex-direction: row;
     }
 
-    .container label input#submit {
+    .container form input#submit {
         width: 30%;
         padding: 20px 0;
         font-size: 1.7rem;
     }
 
-    .container label button {
+    .container form button {
         width: 35%;
         padding: 20px 0;
         font-size: 1.7rem;
@@ -227,7 +227,7 @@ body {
         font-size: 5vw;
     }
 
-    .container label input#create {
+    .container form input#create {
         width: 70%;
         font-size: 2.5rem;
     }
