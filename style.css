@@ -10,16 +10,18 @@ html {
     font-size: 10px;
     font-family: 'Ubuntu', sans-serif;
     background-color: #fffba8;
-    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 90%;
-    height: 90vh;
+    min-height: 90vh;
     background-color: #befff7;
     -webkit-box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 1);
@@ -96,6 +98,24 @@ html {
     cursor: pointer;
 }
 
+.taskList ul {
+    padding: 20px 0 20px 70px;
+}
+
+.taskList ul li {
+    list-style-image: url(icons/push-pin.png);
+    font-size: 2rem;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.taskList li img {
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
 @media (min-width:576px) {
     .container label input#create {
         padding: 20px;
@@ -142,12 +162,16 @@ html {
         margin-top: 15px;
     }
 
+    .taskList ul {
+        padding: 50px 0 20px 100px;
+    }
+
 }
 
 @media (min-width:992px) {
     .container {
         width: 70%;
-        height: 90vh;
+        min-height: 90vh;
     }
 
     .container h2 {
@@ -179,13 +203,24 @@ html {
         margin-top: 0;
     }
 
+    .taskList ul li {
+        list-style-image: url(icons/push-pin_large.png);
+        font-size: 2.8rem;
+        padding: 10px;
+    }
+
+    .taskList li img {
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
 @media (min-width:1400px) {
 
     .container {
         width: 50%;
-        height: 90vh;
+        min-height: 90vh;
     }
 
     .container h2 {
@@ -199,6 +234,10 @@ html {
 
     .container .wrap {
         margin-top: 15px;
+    }
+
+    .taskList ul {
+        padding: 50px 0 20px 150px;
     }
 
 
